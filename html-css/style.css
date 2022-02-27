@@ -1,0 +1,77 @@
+/* css for all */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* css-header */
+#header{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+}
+
+#header .header-inner{
+    width: 80%;
+    height: 100%;
+    display: flex;
+}
+
+#header .header-inner.logo{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+#header .header-inner .nav{
+    width: 75%;
+}
+.main-menu{
+    display: flex;
+    align-items: center;
+}
+
+.main-menu>li{
+    margin-right: 10px;
+    padding: 5px;
+    position: relative;
+}
+
+.main-menu>li>a{
+    color: #020516;
+    text-transform:  uppercase;
+    font: weight 600;
+    text-decoration: none;
+}
+
+.main-menu>li>a,active{
+    color:blue
+}
+
+.sub-menu{
+    display:none;
+}
+
+.main-menu>li:hover .sub-menu{
+    display:block;
+    position:absolute;
+    top: 25px;;
+    left:0;
+    background-color: #f4f4f4;
+    padding:10px;
+    width:max-content;
+}
+
+.main-menu>li:hover .sub-menu li{
+    padding:10px;
+    margin-bottom:10px;border-bottom:1px solid #000;
+
+}
+
+.main-menu>li:hover .sub-menu li a{
+    text-decoration:none;
+    color:black;
+    padding: 7px 0 7px 10px;
+}
+
